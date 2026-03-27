@@ -14,13 +14,13 @@ detection:
     selection:
         # Используем наше новое поле, которое распарсил Vector
         process.command_line|contains:
-            - 'nmap'
-            - 'nmaps'
-            - 'netcat'
-            - 'ncat'
-            - 'nc '
-            - 'nc.openbsd'
-            - 'telnet'
+            - nmap
+            - nmaps
+            - netcat
+            - ncat
+            - nc
+            - nc.openbsd
+            - telnet
     condition: selection
 falsepositives:
     - Legitimate administrator network troubleshooting
