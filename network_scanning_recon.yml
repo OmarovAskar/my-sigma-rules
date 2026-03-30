@@ -11,8 +11,8 @@ logsource:
     product: linux
     service: bash_history
 detection:
-selection:
-          process.command_line|contains:
+    selection:
+        process.command_line|contains:
             - 'nmap'
             - 'nmaps'
             - 'netcat'
