@@ -13,13 +13,13 @@ logsource:
 detection:
     selection:
         process.command_line|contains:
-            - 'nmap'
-            - 'nmaps'
-            - 'netcat'
-            - 'ncat'
-            - 'nc'
-            - 'nc.openbsd'
-            - 'telnet'
+            - nmap
+            - nmaps
+            - netcat
+            - ncat
+            - nc
+            - nc.openbsd
+            - telnet
     condition: selection
 falsepositives:
     - Legitimate administrator network troubleshooting
